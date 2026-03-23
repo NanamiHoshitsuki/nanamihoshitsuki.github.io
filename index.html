@@ -251,7 +251,26 @@ section { position: relative; z-index: 1; }
   font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300;
   color: var(--gold-soft); margin-bottom: 4px;
 }
-.about-name-sub { font-size: 11px; letter-spacing: 0.3em; color: var(--muted); margin-bottom: 32px; }
+.about-name-sub { font-size: 11px; letter-spacing: 0.3em; color: var(--muted); margin-bottom: 24px; }
+.about-skills {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;
+}
+.about-skill-tag {
+  font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.2em;
+  color: var(--gold); border: 1px solid rgba(201,169,110,0.4);
+  padding: 5px 14px; white-space: nowrap;
+}
+.about-skill-tag.featured {
+  background: rgba(201,169,110,0.08);
+}
+.about-profile-heading {
+  font-family: 'Cormorant Garamond', serif; font-size: 13px;
+  letter-spacing: 0.2em; color: var(--gold-soft); margin-bottom: 16px; margin-top: 32px;
+  display: flex; align-items: center; gap: 12px;
+}
+.about-profile-heading::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
 .menu { background: var(--deep); }
 .menu-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
@@ -364,7 +383,7 @@ footer {
   <div class="hero-ring"></div>
   <div class="hero-ring"></div>
   <div class="hero-content">
-    <span class="hero-tag">WESTERN ASTROLOGY</span>
+    <span class="hero-tag">ASTROLOGY · JYOTISH · 四柱推命</span>
     <h1>星が語る、<br><em>あなたの物語</em></h1>
     <p class="hero-sub">西洋占星術によるオンライン鑑定</p>
     <p class="hero-note">サービス案内・ご注意事項・特定商取引法に関する表記をこのページにまとめています。内容をご確認のうえ、お申し込みください。</p>
@@ -387,11 +406,17 @@ footer {
       <div class="about-text">
         <span class="section-label">ABOUT</span>
         <div class="about-name">nanami</div>
-        <div class="about-name-sub">西洋占星術師</div>
+        <div class="about-name-sub">占星術師 / 四柱推命鑑定士</div>
+        <div class="about-skills">
+          <span class="about-skill-tag featured">西洋占星術</span>
+          <span class="about-skill-tag featured">インド占星術</span>
+          <span class="about-skill-tag featured">四柱推命</span>
+        </div>
         <div class="divider"></div>
-        <p>星の配置は、あなたがこの世界に生まれた瞬間の宇宙の地図。ホロスコープには、あなたの才能、課題、そして魂の目的が刻まれています。</p>
-        <p>私は西洋占星術を通じて、その地図を丁寧に読み解き、今のあなたに必要なメッセージをお届けします。</p>
-        <p>「なんとなく生きづらい」「自分らしく生きたい」そんな思いを抱えている方へ。星の言葉を、静かに、でも現実に役立つ形でお伝えします。</p>
+        <p>占星術との出会いは、自分自身が道に迷っていた時期のこと。答えを探して手にとったホロスコープは、「あなたはこういう人間だ」と断言するものではなく、自分をやさしく照らす地図のようでした。その感覚が、今も鑑定の根本にあります。</p>
+        <p>西洋占星術を軸に、インド占星術（ジョーティッシュ）と四柱推命も学びました。異なる叡智の体系が交わるとき、星と命が語りかけるものはより深く、より立体的になります。</p>
+        <p>得意としているのは、自己理解・本質の鑑定と、恋愛・人間関係の読み解き。答えをお伝えするよりも、あなた自身の中にある気づきに寄り添うことを大切にしています。</p>
+        <p>「なんとなく生きづらい」「この人との関係がわからない」、そんな言葉にならない問いを、一緒に星の言葉で解いていきましょう。</p>
       </div>
     </div>
   </div>
